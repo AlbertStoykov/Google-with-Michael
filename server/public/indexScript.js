@@ -15,12 +15,7 @@ function sendSearch(e) {
             window.location.href = searchUrl;
         } else {
             const params = new URLSearchParams ({
-                q: `${e.target.searchquery.value.trim()}`,
-                location: "London",
-                google_domain: "google.co.uk",
-                safe: "active",
-                engine: "google",
-                api_key: api_key
+                q: `${e.target.searchquery.value.trim()}`
             })
             const dataUrl = `http://localhost:3000/requestResults?${params.toString()}`
             fetch(dataUrl)

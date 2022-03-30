@@ -169,7 +169,6 @@ html, body {
 }
 
 .btn {
-    margin-top: 23px;
     margin-right: 11px;
     color: white !important;
     background-color: #303134 !important;
@@ -190,6 +189,10 @@ footer {
     width:100%;
 }
 
+.footer-centre:hover, .advertising:hover, .business:hover, .how-search-works:hover, .privacy:hover, .terms:hover, .settings:hover {
+    color: var(--white) !important;
+    text-decoration: underline;
+}
 .uk {
     padding: 15px 30px;
     border-bottom: 1px solid #212327;
@@ -209,7 +212,8 @@ footer {
 
 .footer-centre {
     flex: 2 50%;
-    justify-content: center;
+    text-align: center;
+    justify-content: center !important;
     font-size: 14px;
 }
 
@@ -238,4 +242,3 @@ footer {
 .privacy, .terms, .settings {
     margin: 1px !important;
 }
-
