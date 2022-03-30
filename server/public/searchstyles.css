@@ -188,6 +188,10 @@ footer {
     position:absolute;
     bottom:0;
     width:100%;
+    
+}
+
+.footer-centre:hover, .advertising:hover, .business:hover, .how-search-works:hover, .privacy:hover, .terms:hover, .settings:hover {
     color: var(--white) !important;
     text-decoration: underline;
 }
