@@ -1,0 +1,23 @@
+:root {
+    --dark: #202124;
+    --white: #bdc1c6;
+}
+ 
+html, body {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+.navbar {
+    background-color: var(--dark);
+    color: var(--white);
+    display: block;
+    padding: 6px;
+}
+
+.navbar-left {
+    text-decoration: none;
+    color: var(--white);
+}
+
+
