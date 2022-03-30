@@ -8,6 +8,7 @@ function collectResultData() {
 }
 
 function populateSearchResults(data) {
+    console.log(data['organic_results']);
     data['organic_results'].forEach(result => {
         document.getElementById(`result${result.position}-heading`).innerHTML = result.title;
         document.getElementById(`result${result.position}-heading`).href = result.link;
