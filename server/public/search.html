@@ -10,6 +10,7 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="./populateResults.js"></script>
+    <script defer src="./indexScript.js"></script>
     <STYLE>
         A {
             text-decoration: none;
@@ -27,9 +28,9 @@
                 <img class="google-img" src="/img/White HD Google Logo.png" alt="Google Logo" width="100" height=auto>
             </a>
             <!-- Search bar-->
-            <form id="searchThis" action="/search" method="get">
-                <input onfocus="if(this.value==this.defaultValue)this.value='';" value="" type="text" id="searchBox"
-                    onblur="if(this.value=='')this.value=this.defaultValue;" vinput="" name="q" />
+            <form id="search-form">
+                <input onfocus="if(this.value==this.defaultValue)this.value='';" value="" type="text" id="search-query"
+                    onblur="if(this.value=='')this.value=this.defaultValue;" vinput="" name="searchquery" />
                 <i class="fa fa-search"></i>
                 <span class="left-pan"><i class="fa fa-microphone color-white"></i></span>
                 <input type="submit" class="btn" name="search" value="Google Search">
@@ -50,79 +51,69 @@
     <!-- Search results populate HTML-->
     <div class="container">
         <div id="result1" class="row bg">
-            <div class="col-md-4"><a id="result1-heading" href="#" style="color: white;"></a></div>
+            <div class="col-md-4"><a id="result1-heading" href="#" style="color: white;"></a>
+                <p style="color: white;" id="result1-desc"></p>
+            </div>
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
         </div>
         <br>
         <div id="result2" class="row">
-            <div class="col-md-4"><a id="result2-heading" href="#" style="color: white;"></a></div>
+            <div class="col-md-4"><a id="result2-heading" href="#" style="color: white;"></a>
+                <p style="color: white;" id="result2-desc"></p>
+            </div>
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
         </div>
         <br>
         <div id="result3" class="row">
-            <div class="col-md-4"><a id="result3-heading" href="#" style="color: white;"></a></div>
+            <div class="col-md-4"><a id="result3-heading" href="#" style="color: white;"></a>
+                <p style="color: white;" id="result3-desc"></p>
+            </div>
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
         </div>
         <br>
         <div id="result4" class="row">
-            <div class="col-md-4"><a id="result4-heading" href="#" style="color: white;"></a></div>
+            <div class="col-md-4"><a id="result4-heading" href="#" style="color: white;"></a>
+                <p style="color: white;" id="result4-desc"></p>
+            </div>
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
         </div>
         <br>
         <div id="result5" class="row">
-            <div class="col-md-4"><a id="result5-heading" href="#" style="color: white;"></a></div>
+            <div class="col-md-4"><a id="result5-heading" href="#" style="color: white;"></a>
+                <p style="color: white;" id="result5-desc"></p>
+            </div>
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
         </div>
         <br>
         <div id="result6" class="row">
-            <div class="col-md-4"><a id="result6-heading" href="#" style="color: white;"></a></div>
-            <div class="col-md-4"></div>
-            <div class="col-md-4"></div>
+            <divclass="col-md-4"><a id="result6-heading" href="#" style="color: white;"></a>
+                <p style="color: white;" id="result6-desc"></p>
         </div>
+        <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
         <br>
         <div id="result7" class="row">
-            <div class="col-md-4"><a id="result7-heading" href="#" style="color: white;"></a></div>
+            <div class="col-md-4"><a id="result7-heading" href="#" style="color: white;"></a>
+                <p style="color: white;" id="result7-desc"></p>
+            </div>
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
         </div>
         <br>
         <div id="result8" class="row">
-            <div class="col-md-4"><a id="result8-heading" href="#" style="color: white;"></a></div>
+            <div class="col-md-4"><a id="result8-heading" href="#" style="color: white;"></a>
+                <p style="color: white;" id="result8-desc"></p>
+            </div>
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
         </div>
     </div>
-    <footer>
-        <div class="uk">United Kingdom</div>
-        <div class="flex-display">
-
-            <div class="footer-left">
-
-                <a class="advertising" href="https://ads.google.com/intl/en_uk/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" target="_blank">Advertising</a>
-
-                <a class="business" href="https://smallbusiness.withgoogle.com/intl/en_uk/?subid=uk-en-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google&utm_medium=ep&utm_campaign=google_hpbfooter&utm_content=google_hpbfooter&gmbsrc=uk-en_GB-et-gs-z-gmb-s-z-u~sb-g4sb_srvcs-u#!/" target="_blank">Business</a>
-
-                <a class="how-search-works" href="https://www.google.com/search/howsearchworks/?fg=1" target="_blank">How Search Works</a>
-            </div>
-
-            <a class="footer-centre" href="https://sustainability.google/intl/en-GB/carbon-free/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=#home" target="_blank">Carbon Neutral since 2007</a>
-
-            <div class="footer-right">
-
-                <a class="privacy" href="https://policies.google.com/privacy?hl=en-GB&fg=1" target="_blank">Privacy</a>
-
-                <a class="terms" href="https://policies.google.com/terms?hl=en-GB&fg=1" target="_blank">Terms</a>
-
-                <a class="settings" href="https://www.google.com/preferences?hl=en-GB&fg=1" target="_blank">Settings</a>
-
-            </div>
-        </div>
-    </footer>
 </body>
 </body>
+
 </html>

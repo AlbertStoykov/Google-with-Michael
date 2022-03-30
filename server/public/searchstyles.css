@@ -80,6 +80,15 @@ html, body {
 
 .container {
     vertical-align: middle;
+    background-color: var(--dark);
+}
+
+.col-md-4 {
+    background-color: var(--dark);
+}
+
+.row {
+    background-color: var(--dark);
 }
 
 .fa {
