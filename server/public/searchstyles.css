@@ -63,12 +63,14 @@ html, body {
     width: 50% !important;
 }
 
-#searchBox {
+#search-query {
     appearance:none; 
     -moz-appearance:none; 
     -webkit-appearance: none; 
     border: 0px;
-    margin-left: 19px;
+    position: absolute;
+    margin-top: -63px;
+    margin-left: 158px;
 
     background-color: #303134 !important;
     color: white !important;
@@ -178,7 +180,10 @@ html, body {
 }
 
 .btn {
-    margin-right: 11px;
+    position: absolute;
+    margin-top: -60px;
+    margin-left: 850px;
+    /* margin-right: 11px; */
     color: white !important;
     background-color: #303134 !important;
 }
