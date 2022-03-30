@@ -188,6 +188,8 @@ footer {
     position:absolute;
     bottom:0;
     width:100%;
+    color: var(--white) !important;
+    text-decoration: underline;
 }
 
 .uk {
