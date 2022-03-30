@@ -33,23 +33,29 @@ html, body {
 }
 
 .navbar-right {
-    text-decoration: none;
+    text-decoration: none !important;
+    text-align: right;
     color: white;
     font-size: 14px;
     font-family: arial,sans-serif;
-    margin: 10px;
+    margin-right: 120px;
+    margin-top: 10px;
 }
 
-.navbar-left:hover {
-  
+.gmail {
+    margin-right: 10px;
 }
-
 .about {
     margin-right: 10px;
     padding-right: 5px;
 }
 
 .about:hover, .store:hover {
+    color: var(--white) !important;
+    text-decoration: underline;
+}
+
+.gmail:hover, .images:hover {
     color: var(--white) !important;
     text-decoration: underline;
 }
@@ -129,12 +135,19 @@ html, body {
 
 }
 
+.search {
+    color: var(--white);
+}
+
+.ms-auto {
+    color: var(--white) !important;
+}
 .icon-white {
     color: #bdc1c6 !important;
 }
 
-.fa-microphone {
-    color: var(--white);
+.fa {
+    color: var(--white) !important;
 }
 
 .btn {
