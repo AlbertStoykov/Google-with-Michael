@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="styles.css"></link>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/4e34f46bbc.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./indexScript.js"></script>
+    <STYLE>A {text-decoration: none; color: inherit} </STYLE>
+    <title>Google</title>
+</head>
+<body>
+
+    <!-- Navbar-->
+    <div class="navbar">
+        <div class="navbar-left">
+            <a class="about" href="https://about.google/?fg=1&utm_source=google-GB&utm_medium=referral&utm_campaign=hp-header">About</a>
+            <a class="store" href="https://store.google.com/GB?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-GB&pli=1">Store</a>
+        </div>
+        <div class="navbar-right">
+            <a class="gmail" href="https://mail.google.com/">Gmail</a>
+            <a class="images" href="https://www.google.co.uk/imghp?hl=en&authuser=0&ogbl">Images</a>
+            <div class="menu">
+                <div class="hamburger"> <span class="glyphicon glyphicon-th icon-red"></span></div>
+                <div class="account"></div>
+            </div>                                  
+        </div>
+    </div>
+    
+    <!-- Search bar-->
+    <div class="search">
+        <div class="container position-absolute top-50 start-50 translate-middle">
+            <div class="row height d-flex justify-content-center align-items-center">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <div class="form"> 
+                      <i class="fa fa-search"></i> 
+                      <form id="search-form">
+                        <input type="text" id="search-query" name="searchquery" class="form-control form-input transparent-input">
+                        <span class="left-pan"><i class="fa fa-microphone"></i></span> 
+                        <input type="submit" class="btn" name="search" value="Google Search">
+                        <input type="submit" class="btn" name="feelinglucky" value="I'm feeling lucky">
+                      </form>
+                    </div>
+                </div>
+                <div class="col-md-3"></div>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="uk">United Kingdom</div>
+        <div class="flex-display">
+            <div class="footer-left">
+                <div class="advertising">Advertising</div>
+                <div class="business">Business</div>
+                <div class="how-search-works">How Search Works</div>
+            </div>
+            <div class="footer-centre" href="https://sustainability.google/intl/en-GB/carbon-free/?utm_source=googlehpfooter&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=#home">Carbon Neutral since 2007</div>
+            <div class="footer-right">
+                <div class="privacy">Privacy</div>
+                <div class="terms">Terms</div>
+                <div class="settings">Settings</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

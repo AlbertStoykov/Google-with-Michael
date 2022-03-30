@@ -16,7 +16,7 @@ function sendSearch(e) {
         .then(res => res.json())
         .then(data => {
             if (e.submitter.name === "search") {
-                console.log(data)
+                window.location.href = url
             } else {
                 window.location.href = data['organic_results'][0]['link']
             }
