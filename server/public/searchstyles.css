@@ -1,0 +1,19 @@
+:root {
+    --dark: #202124;
+    --white: #bdc1c6;
+}
+
+html, body {
+    background-color: var(--dark);
+    color: var(--white);
+    top: 20%;
+}
+
+.navbar {
+    background-color: var(--dark);
+    color: var(--white);
+    display: block;
+    padding: 2px;
+    font-size: 14px;
+    font-family: arial,sans-serif;
+}
