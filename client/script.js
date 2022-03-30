@@ -1,17 +1,26 @@
-const button = document.getElementById("search-button")
+const form = document.getElementById("search-form")
 
-button.addEventListener("click", sendSearch)
+form.addEventListener("submit", sendSearch)
 
 //Send the search query
-function sendSearch() {
-    const params = new URLSearchParams ({
-        q: "coffee",
-    })
-
-    const url = `http://localhost:3000/search?${params.toString()}`
-
-    fetch(url)
-    .then(res => res.json())
-    .then(data => console.log(data))
-    .catch(console.warn)
+function sendSearch(e) {
+    e.preventDefault();
+    if (e.target.searchquery.value.trim()) {
+        const params = new URLSearchParams({
+            q: e.target.searchquery.value.trim(),
+        })
+    
+        const url = `http://localhost:3000/search?${params.toString()}`
+    
+        fetch(url)
+        .then(res => res.json())
+        .then(data => {
+            if (e.submitter.name === "search") {
+                console.log(data)
+            } else {
+                window.location.href = data['organic_results'][0]['link']
+            }
+        })
+        .catch(console.warn)
+    }
 }

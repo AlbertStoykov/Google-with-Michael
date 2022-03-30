@@ -34,9 +34,13 @@
         <div class="container position-absolute top-50 start-50 translate-middle">
             <div class="row height d-flex justify-content-center align-items-center">
                 <div class="col-md-6">
-                    <div class="form"> <i class="fa fa-search"></i> <input type="text" class="form-control form-input transparent-input" placeholder="Search anything..."><span class="left-pan"><i class="fa fa-microphone"></i></span> </div>
-                    <button id="search-button" type="button" class="btn btn-outline-secondary">Google Search</button>
-                <button type="button" class="btn btn-outline-secondary">I'm feeling lucky</button>
+                    <div class="form"> <i class="fa fa-search"></i> 
+                    <form id="search-form">
+                        <input type="text" id="search-query" name="searchquery" class="form-control form-input transparent-input" placeholder="Search anything...">
+                        <span class="left-pan"><i class="fa fa-microphone"></i></span> </div>
+                        <input type="submit" class="btn btn-outline-secondary" name="search" value="Google Search">
+                        <input type="submit" class="btn btn-outline-secondary" name="feelinglucky" value="I'm feeling lucky">
+                    </form>
                 </div>
                 
             </div>
