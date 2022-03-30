@@ -5,16 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="searchstyles.css">
+    </link>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./script.js"></script>
     <STYLE>
         A {
             text-decoration: none;
             color: inherit
         }
     </STYLE>
-    <script defer src="populateResults.js"></script>
     <title>Google</title>
 </head>
 
@@ -23,8 +24,14 @@
     <div class="navbar fixed-top sticky-top">
         <div class="navbar-left">
             <a class="navbar-brand" href="http://localhost:3000/">
-                <img src="./img/White HD Google Logo.png" alt="Google Logo" width="100" height=auto>
+                <img class="google-img" src="/img/White HD Google Logo.png" alt="Google Logo" width="100" height=auto>
             </a>
+            <!-- Search bar-->
+            <form id="searchThis" action="/search" method="get">
+                <input onfocus="if(this.value==this.defaultValue)this.value='';" value="" type="text" id="searchBox" onblur="if(this.value=='')this.value=this.defaultValue;" vinput="" name="q"/>
+                <i class="fa fa-search"></i>
+                <span class="left-pan"><i class="fa fa-microphone color-white"></i></span></form>
+            <!-- Search bar-->
 
         </div>
         <div class="navbar-right">
@@ -40,35 +47,35 @@
     <!-- Search results populate HTML-->
     <div class="container">
         <div id="result1" class="row height d-flex justify-content-center align-items-center">
-            <div class="col-md-6"><a href="#" id="result1-heading"></a></div>
+            <div class="col-md-6"><h2 id="result1-heading"><a href="#"></a></h2></div>
             <div class="col-md-6"></div>
         </div>
         <div id="result2" class="row height d-flex justify-content-center align-items-center">
-            <div class="col-md-6"><a href="#" id="result2-heading"></a></div></div>
+            <div class="col-md-6"><h2 id="result2-heading"><a href="#"></a></h2></div></div>
             <div class="col-md-6"></div>
         </div>
         <div id="result3" class="row height d-flex justify-content-center align-items-center">
-            <div class="col-md-6"><a href="#" id="result3-heading"></a></div></div>
+            <div class="col-md-6"><h2 id="result3-heading"><a href="#"></a></h2></div></div>
             <div class="col-md-6"></div>
         </div>
         <div id="result4" class="row height d-flex justify-content-center align-items-center">
-            <div class="col-md-6"><a href="#"id="result4-heading"></a></div></div>
+            <div class="col-md-6"><h2 id="result4-heading"><a href="#"></a></h2></div></div>
             <div class="col-md-6"></div>
         </div>
         <div id="result5" class="row height d-flex justify-content-center align-items-center">
-            <div class="col-md-6"><a href="#" id="result5-heading"></a></div></div>
+            <div class="col-md-6"><h2 id="result5-heading"><a href="#"></a></h2></div></div>
             <div class="col-md-6"></div>
         </div>
         <div id="result6" class="row height d-flex justify-content-center align-items-center">
-            <div class="col-md-6"><a href="#" id="result6-heading"></a></div></div>
+            <div class="col-md-6"><h2 id="result6-heading"><a href="#"></a></h2></div></div>
             <div class="col-md-6"></div>
         </div>
         <div id="result7" class="row height d-flex justify-content-center align-items-center">
-            <div class="col-md-6"><a href="#" id="result7-heading"></a></div></div>
+            <div class="col-md-6"><h2 id="result7-heading"><a href="#"></a></h2></div></div>
             <div class="col-md-6"></div>
         </div>
         <div id="result8" class="row height d-flex justify-content-center align-items-center">
-            <div class="col-md-6"><a href="#" id="result8-heading"></a></div></div>
+            <div class="col-md-6"><h2 id="result8-heading"><a href="#"></a></h2></div></div>
             <div class="col-md-6"></div>
         </div>
     </div>
