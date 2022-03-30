@@ -35,15 +35,14 @@
             <div class="row height d-flex justify-content-center align-items-center">
                 <div class="col-md-6">
                     <div class="form"> 
-                        <i class="fa fa-search icon-white"></i> 
-                        <input type="text" class="form-control form-input transparent-input rounded-pill">
-                        <!-- <i class="fa-light fa-magnifying-glass"></i> -->
-                        <span class="left-pan icon-white">
-                        <i class="fa fa-microphone"></i>
-                        </span> 
+                      <i class="fa fa-search"></i> 
+                      <form id="search-form">
+                        <input type="text" id="search-query" name="searchquery" class="form-control form-input transparent-input">
+                        <span class="left-pan"><i class="fa fa-microphone"></i></span> 
+                        <input type="submit" class="btn" name="search" value="Google Search">
+                        <input type="submit" class="btn" name="feelinglucky" value="I'm feeling lucky">
+                      </form>
                     </div>
-                    <button id="search-button" type="button" class="btn">Google Search</button>
-                <button type="button" class="btn">I'm Feeling Lucky</button>
                 </div>
                 
             </div>
