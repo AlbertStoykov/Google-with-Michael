@@ -13,6 +13,7 @@ Building Google page in dark mode with Michael Harkins-Meloy
 ### Usage
 
 * Pressing "Google Search" to find results.
+* Pressing "I'm feeling lucky" to be redirected to the first search result.
 
 
 
@@ -20,6 +21,9 @@ Building Google page in dark mode with Michael Harkins-Meloy
 
 * Problems changing colors of font awesome icons.
 * Problems with flexbox while trying to structure the footer.
+*
+*
+*
 
 
 ## Wins & Challenges
@@ -28,9 +32,14 @@ Building Google page in dark mode with Michael Harkins-Meloy
 
 * Setting google img as background.
 * Getting very close to the original google page.
+*
+*
+*
 
 ### Challenges
 
 * Problems changing colors of font awesome icons.
 * Problems with flexbox while trying to structure the footer.
-
+*
+*
+*
