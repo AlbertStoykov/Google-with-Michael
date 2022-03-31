@@ -19,7 +19,7 @@ app.get('/search', (req, res) => {
 
 app.get('/requestResults', (req, res) => {
     //Uncomment to get live data
-    const params = new URLSearchParams({
+    /*const params = new URLSearchParams({
         q: req.query.q,
         location: "London",
         google_domain: "google.co.uk",
@@ -31,8 +31,8 @@ app.get('/requestResults', (req, res) => {
     fetch(url)
     .then(search_response => search_response.json())
     .then(data => res.json(data))
-    .catch(console.warn)
-    //res.json(dummy_data)
+    .catch(console.warn)*/
+    res.json(dummy_data)
 })
 
 module.exports = app
