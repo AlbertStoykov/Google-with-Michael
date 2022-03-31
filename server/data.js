@@ -1,3 +1,5 @@
+// Not all the data is available from this object as it was copied from a console.log()
+// See https://serpapi.com/search-api for the full documentation
 const dummy_data = {
     search_metadata: {
       id: '624421f6c640d2ef6c25876e',
