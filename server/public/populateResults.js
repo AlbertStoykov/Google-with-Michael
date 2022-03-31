@@ -15,7 +15,7 @@ function populateSearchResults(data) {
         document.getElementById(`result${result.position}-heading`).href = result.link;
         document.getElementById(`result${result.position}-desc`).innerHTML = result.snippet;
     });
-    console.log(data['related_questions'])
+    document.getElementById("question-table").style.display = "none"
     if (data['related_questions'] && data['related_questions'] !== undefined) {
         document.getElementById("question-table").style.display = "block";
 
