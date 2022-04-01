@@ -26,7 +26,7 @@ Initially we were going to have a seperate client and server but decided to let 
 
 This allowed us to develop the main page (`index.html`) and the search page (`search.html`) seperately. Instead of changing the `index.html` to look like the search page, the search page automatically runs the script `populateResults.js` which in turn makes a request to our backend API to recieve the search data in a JSON format. This JSON data is then used to populate the blank search results and even some other questions that are usually asked by other users on the given topic.
 
-### Back
+### Backend
 
 The backend was built to use real Google search results, at first it seemed that we could only access the direct Google Search API with our own live website but upon further research into the matter we found a 3rd party API provider, the API documentation can be found here: "https://serpapi.com/search-api"
 
