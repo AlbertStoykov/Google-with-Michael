@@ -30,6 +30,8 @@ This allowed us to develop the main page (`index.html`) and the search page (`se
 
 The backend was built to use real Google search results, at first it seemed that we could only access the direct Google Search API with our own live website but upon further research into the matter we found a 3rd party API provider, the API documentation can be found here: "https://serpapi.com/search-api"
 
+Remember `fetch()` in JavaScript is just a way of making a HTTP request which can be made to ANY API endpoint you want, not just locally. You just need the right parameters which can usually be found in the API documentation.
+
 Serp API returns with a JSON data structure, which a saved offline version can be found in `../server/data.js` (this was very useful for testing as the free package on Serp API only allows 100 searches per month).
 
 The root API endpoint in `app.js` will return with the `index.html` file, when opened in a browser it will automatically display this. This is the same for the `/search` endpoint but the key difference is that the search query parameters are extracted from the browser window in the script file `populateResults.js` and sent to another endpoint `/requestResults`.
