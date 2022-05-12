@@ -1,5 +1,5 @@
 # Google-with-Michael
-<a href="https://google-lap1-pairscallenge.herokuapp.com/" target="_blank">google-lap1-pairscallenge.herokuapp.com</a>
+<a href="https://google-lap1-pairscallenge.herokuapp.com/" target="_blank">google-lap1-pairscallenge.herokuapp.com</a><br>
 Building Google's page in dark mode with Albert Stoykov and Michael Harkins-Meloy
 
 ## Installation & Usage
